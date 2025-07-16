@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>República Verde de Arayuna</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f0fdf4;
       color: #1a1a1a;
+      margin: 0;
+      padding: 0;
     }
     header {
       background-color: #14532d;
@@ -54,6 +55,36 @@
       cursor: pointer;
       margin-top: 1rem;
     }
+    .carnet-example {
+      text-align: center;
+      padding: 2rem;
+      background-color: #ffffff;
+      margin: 2rem 0;
+      border: 2px solid #166534;
+      border-radius: 16px;
+    }
+    .carnet-example img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    .form-container {
+      margin-top: 2rem;
+      background-color: #ffffff;
+      padding: 2rem;
+      border: 1px solid #166534;
+      border-radius: 16px;
+    }
+    .form-container label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .form-container input, .form-container textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
@@ -63,55 +94,54 @@
   </header>
 
   <nav>
-    <a href="#quienes">Arayuna</a>
     <a href="#constitucion">Constitución</a>
     <a href="#ciudadania">Ciudadanía</a>
-    <a href="#circulo">Círculo del Bosque</a>
+    <a href="#carnet">Ejemplo de Carnet</a>
   </nav>
 
-  <section id="quienes">
-    <h2>¿Qué es Arayuna?</h2>
-    <p>
-      Arayuna es una nación simbólica, ecológica y libre. Fundada en los principios de paz radical, protección del bosque y espiritualidad viviente.
-    </p>
-    <p>
-      En tiempos de humo y olvido, decidimos sembrar patria donde otros ven solo selva. Hoy, Arayuna crece en raíces, palabras y esperanza.
-    </p>
-  </section>
-
+  <!-- Constitución -->
   <section id="constitucion">
     <h2>Constitución Verde</h2>
-    <ul>
-      <li><strong>Artículo I:</strong> La Tierra es Sagrada</li>
-      <li><strong>Artículo II:</strong> Toda vida es digna</li>
-      <li><strong>Artículo III:</strong> El poder nace del círculo</li>
-      <li><strong>Artículo IV:</strong> La selva no se vende</li>
-      <li><strong>Artículo V:</strong> El Agua habla primero</li>
-    </ul>
+    <p><strong>Artículo I:</strong> La Tierra es Sagrada</p>
+    <p><strong>Artículo II:</strong> Toda vida es digna</p>
+    <p><strong>Artículo III:</strong> El poder nace del círculo</p>
+    <p><strong>Artículo IV:</strong> La selva no se vende</p>
+    <p><strong>Artículo V:</strong> El Agua habla primero</p>
     <p>Descarga la versión completa próximamente.</p>
   </section>
 
-  <section id="ciudadania">
-    <h2>Ciudadanía Verde</h2>
-    <p>Solicita tu ciudadanía simbólica en Arayuna:</p>
-    <form>
-      <label>Nombre espiritual o real:<br><input type="text" required /></label><br><br>
-      <label>País de origen:<br><input type="text" /></label><br><br>
-      <label>¿Por qué quieres unirte a Arayuna?<br><textarea rows="4" cols="50"></textarea></label><br><br>
-      <label><input type="checkbox" required /> Me comprometo a cuidar la Tierra</label><br><br>
-      <button class="button" type="submit">Solicitar Ciudadanía</button>
-    </form>
+  <!-- Ejemplo de Carnet -->
+  <section id="carnet" class="carnet-example">
+    <h2>Ejemplo de Carnet de Ciudadanía</h2>
+    <img src="https://example.com/foto_amazonas.jpg" alt="Foto Amazonas" />
+    <h3>Juan Pérez</h3>
+    <p><strong>País de Origen:</strong> Colombia</p>
+    <p><strong>Motivación:</strong> Defender la vida y la selva</p>
+    <p><em>Ciudadano simbólico de la República Verde de Arayuna</em></p>
   </section>
 
-  <section id="circulo">
-    <h2>Círculo del Bosque</h2>
-    <p>
-      Aquí compartimos poesía, acciones ecológicas, arte verde y noticias del bosque. Pronto abriremos un blog colaborativo.
-    </p>
+  <!-- Formulario de Ciudadanía -->
+  <section id="ciudadania">
+    <h2>Solicitud de Ciudadanía</h2>
+    <div class="form-container">
+      <form action="mailto:alvarosaizvidal@gmail.com" method="POST" enctype="multipart/form-data">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="origen">País de origen:</label>
+        <input type="text" id="origen" name="origen">
+        
+        <label for="motivo">Motivación para unirse a Arayuna:</label>
+        <textarea id="motivo" name="motivo" rows="4" required></textarea>
+        
+        <button type="submit" class="button">Enviar Solicitud</button>
+      </form>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 República Verde de Arayuna · "La Tierra vive en nuestros corazones"</p>
   </footer>
+
 </body>
 </html>
