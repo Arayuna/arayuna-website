@@ -76,15 +76,15 @@
       border-radius: 50%;
       margin-bottom: 1rem;
     }
-.form-container {
-  margin-top: 2rem;
-  background-color: #ffffff;
-  padding: 2rem;
-  border: 1px solid #166534;
-  border-radius: 16px;
-  max-width: 600px; /* NUEVO: limita el ancho */
-  margin-left: auto; /* NUEVO: centra horizontalmente */
-  margin-right: auto; /* NUEVO: centra horizontalmente */
+.form-container input,
+.form-container textarea {
+  width: 80%; /* antes 100% */
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 1rem auto; /* centra horizontalmente */
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
     .form-container label {
       display: block;
